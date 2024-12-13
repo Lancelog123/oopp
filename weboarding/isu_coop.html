@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camarag</title>
+    <link rel="stylesheet" href="Camarag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+    
+            <li class="dropdown"> 
+                <div class="dropdown-content" id="myDropdown">
+                    <select id="locationSelect">
+                        <option value="">Categories</option>
+                        <option value="Camarag">Camarag</option>
+                        <option value="Phinzon Phase 1">Phinzon Phase 1</option>
+                        <option value="Phinzon Phase 2">Phinzon Phase 2</option>
+                        <option value="ISU Coop">ISU Coop</option>
+                        <option value="ISU Boarding">ISU Boarding</option>
+                        <option value="Velsaco">Velsaco</option>
+                    </select>
+                    <button id="goButton">Go</button>
+                </div>
+    
+            <li><a href="Tenant.html">We-Book</a></li>
+            <li><a href="Contact.html">About Us</a></li>
+          </ul>
+    
+          <ul class="right-menu">
+            <li>
+                <a href="userprofile.html">
+                    <i class="fas  fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+    <h2>PHINZON PHASE 2</h2>
+
+    <div class="grid-container">
+        <!-- Grid Items -->
+        <div class="grid-item">
+            <a href="camarag1.html">
+                <img src="https://i.pinimg.com/474x/4d/82/0c/4d820c282d34077d9d0a04764bc22573.jpg" alt="Camarag Image 1">
+                <div class="image-overlay">
+                    <div class="badge new">New</div>
+                    <h1>Gojo's Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/736x/3e/48/27/3e48272e5500e999e6f76dac52406cf6.jpg" alt="Camarag Image 1">
+                <div class="image-overlay">https
+                    <div class="badge sale">Sale</div>
+                    <h1>Nanami's Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/474x/d5/b2/fb/d5b2fba6948adaa5091ac09533818167.jpg" alt="Camarag Image 1">
+                <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Den Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/474x/28/35/a0/2835a07ee89534e6556bfe5c4c9e6665.jpg" alt="Camarag Image 1">
+                <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Kat's Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/474x/0c/bf/bb/0cbfbbe077ba3295432937d094670f6c.jpg" alt="Camarag Image 1">
+                    <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Gath Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/736x/91/fa/9f/91fa9fa64e3022bf0de4c78a60b40225.jpg" alt="Camarag Image 1">                
+                    <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Gedania Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/736x/49/3a/44/493a4442eb0bed142c3c1aa0b7c161a7.jpg" alt="Camarag Image 1">                
+                <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Virgie's Boarding House</h1>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="camarag.html">
+                <img src="https://i.pinimg.com/474x/f2/c8/ec/f2c8ecc0251bee0f5cb7f06d7b80f953.jpg" alt="Camarag Image 1">                
+                <div class="image-overlay">
+                    <div class="badge">Featured</div>
+                    <h1>Egay's Boarding House</h1>
+                </div>  
+            </a>
+        </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        // Toggle the dropdown visibility
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
+
+        // Redirect based on dropdown selection
+        function updateMarker() {
+            const select = document.getElementById('locationSelect');
+            const selectedValue = select.value;
+
+            switch(selectedValue) {
+                case 'Camarag':
+                    window.location.href = 'camarag.html';
+                    break;
+                case 'Phinzon Phase 1':
+                    window.location.href = 'phinzon_phase_1.html';
+                    break;
+                case 'Phinzon Phase 2':
+                    window.location.href = 'phinzon_phase_2.html';
+                    break;
+                case 'ISU Coop':
+                    window.location.href = 'isu_coop.html';
+                    break;
+                case 'ISU Boarding':
+                    window.location.href = 'isu_boarding.html';
+                    break;
+                case 'Velasco':
+                    window.location.href = 'velasco.html';
+                    break;
+                default:
+                    alert('Please select a category to proceed.');
+                    break;
+            }
+        }
+
+        document.getElementById('goButton').onclick = function() {
+            updateMarker();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light grey background */
+  color: #333; /* Dark text color for contrast */
+}
+
+
+
+
+/* Header */
+.header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(121, 121, 121, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar .logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.nav-bar ul li {
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-bar ul.right-menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.nav-bar ul.right-menu li {
+  margin-left: auto;
+}
+
+.nav-bar ul.right-menu li a {
+  color: #333;
+}
+
+.nav-bar ul li a:hover, 
+.nav-bar ul.right-menu li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #262626;
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.nav-bar ul li {
+  margin-right: 15px;
+}
+
+.nav-bar ul li a {
+  margin-top: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  
+}
+
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Select */
+#locationSelect {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+
+
+/* Dropdown Button */
+#goButton {
+  margin-left: 8px;
+  padding: 4px 12px;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#goButton:hover {
+  background-color: #ddd;
+}
+
+/* Styling the dropdown button and select on hover */
+.dropdown-content button:hover, #locationSelect:hover {
+  background-color: #f0f0f0;
+}
+
+/* Menu on hover (for items) */
+.nav-bar ul li:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Menu */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.menu li {
+  padding: 0 15px; /* Adjusted padding for smaller header */
+  border-radius: 5px;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: #ffffff; /* Background color on hover */
+}
+
+/* Menu Links */
+.menu li a {
+  padding: 3px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.menu li a i {
+  margin-right: 5px; /* Adjusted margin */
+  font-size: 16px; /* Adjusted font size */
+}
+
+.menu li a span {
+  font-size: 16px; /* Adjusted font size */
+}
+
+
+
+
+/* Title Styles */
+h2 {
+  font-size: 30px;
+  margin: 20px 0;
+  margin-left: 45%;
+  color: #2c3e50;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 30px;
+  margin: 20px 0;
+  color: #ffffff;
+  text-shadow: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid Container Styles */
+.grid-container {
+  margin-top: 20px;
+  margin-left: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1rem; /* Optional: Space between grid items */
+  gap: 10px;
+  width: 97%;
+}
+
+/* Grid Item Styles */
+.grid-item {
+  position: relative;
+  overflow: hidden; /* Hide overflow for overlay effects */
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 120%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Image Overlay Styles */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Badge Styles */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #337ab7; /* Default badge color */
+  border-radius: 10px;
+}
+
+/* Specific Badge Colors */
+.badge.sale {
+  background-color: #ff69b4; /* Pink for sale */
+}
+
+.badge.new {
+  background-color: #34c759; /* Green for new */
+}
+
+/* Responsive Image Styles */
+@media (max-width: 768px) {
+  .grid-item img {
+      height: 150px; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item img {
+      height: 100px; /* Adjust height for small screens */
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Custom Map Example</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="camaraglocate1.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Camarag Map</h1>
+        <nav class="nav-bar">
+            <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Categories.html">Categories</a></li>
+                <li><a href="Tenant.html">We-Book</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <li class="location-input">
+                <select id="locationSelect">
+                    <option value="">Select a location</option>
+                    <option value="16.722647641388185,121.68517511034149">Camarag Village</option>
+                    <option value="16.723347641388185, 121.6845">SNJ Boarding House</option>
+                    <option value="16.723447641388185,121.68517841034149">EJ Boarding House</option>
+                    <option value="16.722647641388185,121.6855000">Aljades Boarding House</option>
+                    <option value="16.7200,121.6900">ISU MAIN CAMPUS</option>
+                    <option value="16.7228,121.6842">Jane's Boarding House</option> <!-- Adjusted position near New Location 2 and 4 -->
+                    <option value="16.7222,121.6844">BGC Boarding House</option> <!-- Adjusted closer to New Location 1 -->
+                    <option value="16.7223,121.6840">New Location 3</option> <!-- Close to EJ Boarding House -->
+                    <option value="16.7220,121.6845">New Location 4</option> <!-- Adjusted near Aljades Boarding House -->
+                </select>
+                <button onclick="updateMarker()">Go</button>
+            </li>
+
+            <ul class="right-menu">
+                <li>
+                    <a href="userprofile.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 We-Boarding Map. All rights reserved. SNJ GROUP</p>
+    </footer>
+
+    <!-- Link to external JS file -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.awesome-markers"></script>
+    <script src="camaraglocate1.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+    
+            <li class="dropdown"> 
+                <div class="dropdown-content" id="myDropdown">
+                    <select id="locationSelect">
+                        <option value="">Categories</option>
+                        <option value="Camarag">Camarag</option>
+                        <option value="Phinzon Phase 1">Phinzon Phase 1</option>
+                        <option value="Phinzon Phase 2">Phinzon Phase 2</option>
+                        <option value="ISU Coop">ISU Coop</option>
+                        <option value="ISU Boarding">ISU Boarding</option>
+                        <option value="Velasco">Velasco</option>
+                    </select>
+                    <button id="goButton">Go</button>
+                </div>
+    
+            <li><a href="Tenant.html">We-Book</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+    
+          <ul class="right-menu">
+            <li>
+                <a href="userprofile.html">
+                    <i class="fas  fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+    
+    <!-- Main Section -->
+    <section class="main-content">
+        <div class="contact-box">
+            <h1>Rent <span>Now!</span></h1>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Facebook Account">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <div class="detail">
+                <i class="fas fa-envelope"></i>
+                <p>snj@website.com</p>
+            </div>
+            <div class="detail">
+                <i class="fas fa-phone"></i>
+                <p>+63 968 2355 3654 </p>
+            </div>
+            <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Echague, Isabela, Philippines</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-menu">
+            <div class="menu-column">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Social Media Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
